@@ -58,6 +58,5 @@ jobs:
             source ~/.nvm/nvm.sh
             npm --help
             cd ~/nome-do-seu-repo 
-            yarn
-            ./node_modules/.bin/typeorm migration:run
+            yarn prisma migrate deploy
             pm2 restart nome-do-seu-server
