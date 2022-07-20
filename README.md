@@ -26,7 +26,7 @@ Make sure you have node and docker installed by typing `node -v` and `docker -v`
 
 - `yarn dev:server`: starts the server in the port you specified in .env (default 3333)
 
-- `yarn prisma`: enables typeorm cli
+- `yarn prisma`: enables prisma cli
 
 - `yarn lint`: check linting rules based in the .eslintrc.json file
 
