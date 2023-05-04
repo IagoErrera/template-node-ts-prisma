@@ -3,7 +3,6 @@ import 'dotenv/config';
 
 import express, { NextFunction, Request, Response } from 'express';
 import cors from 'cors';
-import swaggerUi from 'swagger-ui-express';
 
 import 'express-async-errors';
 
@@ -11,15 +10,11 @@ import '@shared/container';
 
 import AppError from '@shared/errors/AppError';
 
-import swaggerDocs from '@config/swagger';
-
 import routes from './routes';
 
 const app = express();
 
 app.use(cors());
-
-app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.use(express.json());
 
