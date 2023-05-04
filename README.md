@@ -4,13 +4,13 @@
 
 This template uses:
 
+For development ->
 - Typescript
 - Prisma
 - NodeJS
 - Express
 - Postgres
 - ESLint
-- Swagger
 
 ## Configuration
 
@@ -18,7 +18,7 @@ Make sure you have node and docker installed by typing `node -v` and `docker -v`
 
 1. Use the repository as template (by forking it or using this one directly)
 2. Install dependencies `yarn`
-3. Run `docker run -d --name postgres -e POSTGRES_PASSWORD=mypass -e -p 5432:5432 postgres:latest`
+3. Run `docker run --name postgres -e POSTGRES_PASSWORD=mypass -p 5432:5432 -d postgres:latest`
 4. Create a database in your container
 5. Configure `.env` file copying the .env.example and setting the variables
 
