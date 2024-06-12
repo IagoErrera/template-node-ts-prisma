@@ -1,0 +1,5 @@
+{
+    "prisma.import.exclude": [
+        "**/schema.prisma"
+    ]
+}
