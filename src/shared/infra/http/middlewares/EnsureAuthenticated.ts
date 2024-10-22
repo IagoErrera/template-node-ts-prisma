@@ -25,7 +25,7 @@ export default function ensureAuthenticated(request: Request, _response: Respons
     request.token = { id };
 
     return next();
-  } catch (error) {
+  } catch (_error) {
     throw new AppError('Invalid JWT token');
   }
 }

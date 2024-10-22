@@ -4,7 +4,7 @@ import AppError from '@shared/errors/AppError';
 
 export default function verifyValidationResult(
   req: Request,
-  res: Response,
+  _res: Response,
   next: NextFunction,
 ): void {
   const errors = validationResult(req);
