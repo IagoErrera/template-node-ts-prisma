@@ -1,7 +1,7 @@
 import { Users } from '@prisma/client';
 
-import ICreateUserDTO from '../dtos/ICreateUserDTO';
-import IUpdateUserDTO from '../dtos/IUpdateUserDTO';
+import ICreateUserDTO from '@modules/users/dtos/ICreateUserDTO';
+import IUpdateUserDTO from '@modules/users/dtos/IUpdateUserDTO';
 
 interface IUsersRepository {
   findByEmail(email: string): Promise<Users | null>;

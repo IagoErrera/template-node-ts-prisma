@@ -7,7 +7,7 @@ import AppError from '@shared/errors/AppError';
 import authConfig from '@config/auth';
 
 import IHashProvider from '@shared/container/providers/HashProvider/models/IHashProvider';
-import IUsersRepository from '../repositories/IUsersRepository';
+import IUsersRepository from '../infra/repositories/interfaces/IUsersRepository';
 
 interface IRequest {
   email: string;

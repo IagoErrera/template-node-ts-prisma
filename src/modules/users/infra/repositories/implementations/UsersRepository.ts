@@ -1,12 +1,12 @@
 import prisma from '@shared/infra/prisma/client';
-import { Prisma, Users } from '@prisma/client';
+import { Users } from '@prisma/client';
 
-import IUsersRepository from '@modules/users/repositories/IUsersRepository';
+import IUsersRepository from '@modules/users/infra/repositories/interfaces/IUsersRepository';
 import ICreateUserDTO from '@modules/users/dtos/ICreateUserDTO';
 import IUpdateUserDTO from '@modules/users/dtos/IUpdateUserDTO';
 
 export default class UsersRepository implements IUsersRepository {
-  private ormRepository: Prisma.UsersDelegate<Prisma.RejectOnNotFound | Prisma.RejectPerOperation | undefined>
+  private ormRepository;
 
   constructor() {
     this.ormRepository = prisma.users;
