@@ -23,6 +23,7 @@
     "import/no-unresolved": "off",
     "linebreak-style": "off",
     "no-useless-constructor": "off",
+    "no-empty-function": ["error", { "allow": ["constructor"] }],
     "no-underscore-dangle": "off",
     "class-methods-use-this": "off",
     "max-len": "off",
